@@ -13,19 +13,3 @@
 .app .title {
   text-align: center;
 }
-
-.navigation {
-  width: 100%;
-}
-.navigation ul {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  gap: 5px;
-}
-.navigation li {
-  list-style: none;
-}
-.navigation li > * {
-  height: 100%;
-}
