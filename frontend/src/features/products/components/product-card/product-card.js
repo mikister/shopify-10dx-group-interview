@@ -1,7 +1,7 @@
 import styles from "./product-card.module.css";
 
 function ProductCard({
-  product: { id, title, description, handle, price, image_url },
+  product: { id, title, description, handle, price, stock, image_url },
 }) {
   const cardStyle = {
     "--image_url": `url(${image_url})`,
@@ -16,7 +16,7 @@ function ProductCard({
         <p className={styles.description}>{description}</p>
         <small>
           <div>Price: {price} &euro;</div>
-          <div>In stock: 0</div>
+          <div>In stock: {stock}</div>
         </small>
       </div>
     </div>
