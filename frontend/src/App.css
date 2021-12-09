@@ -1,0 +1,31 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  width: 100%;
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.app .title {
+  text-align: center;
+}
+
+.navigation {
+  width: 100%;
+}
+.navigation ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 5px;
+}
+.navigation li {
+  list-style: none;
+}
+.navigation li > * {
+  height: 100%;
+}
