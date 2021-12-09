@@ -14,3 +14,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:80"
+    environment:
+      SHOPIFY_API_KEY: ${SHOPIFY_API_KEY}
+      SHOPIFY_API_PASS: ${SHOPIFY_API_PASS}
+      SHOPIFY_API_HOST: ${SHOPIFY_API_HOST}
+      SHOPIFY_API_VERSION: ${SHOPIFY_API_VERSION}
