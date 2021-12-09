@@ -21,6 +21,7 @@ function __map_products($product)
     $product_object->description = $product->body_html;
     $product_object->handle = $product->handle;
     $product_object->price = $product->variants[0]->price;
+    $product_object->stock = $product->variants[0]->inventory_quantity;
     $product_object->image_url = $product->image->src;
 
     return $product_object;
